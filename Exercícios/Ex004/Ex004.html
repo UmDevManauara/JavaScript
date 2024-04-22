@@ -9,7 +9,10 @@
 
     <script>
         var nome = window.prompt('Qual é seu nome? ')
-        document.write(`${nome}, seu nome tem ${nome.length}.`)
+        document.write(`<strong>${nome}</strong>, seu nome tem ${nome.length}.<br>`)
+        document.write(`Seu nome em Maiúsculo é ${nome.toUpperCase()} <br>`)
+        document.write(`Seu nome em Minúsculo é ${nome.toLowerCase()}`)
+        //n1.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'}) //numero para reais
     </script>
     
 </body>
