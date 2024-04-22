@@ -23,9 +23,10 @@
     <h1>Olá, Mundo!</h1> 
     
   <script>
-  window.alert('Olá, Mundo!') //windows não é obrigatorio.
-  window.confirm('Esta gostando de JavaScript?') //janela com botao ok ou cancelar
-  window.prompt('Qual é seu nome?') //Caixa de input de texto para o usuario
+  //window.alert('Olá, Mundo!') //windows não é obrigatorio.
+  //window.confirm('Esta gostando de JavaScript?') //janela com botao ok ou cancelar
+  var nome = window.prompt('Qual é seu, nome?') //Caixa de input de texto para o usuario // alem de var, podemos usar let e const
+  window.alert('Prazer em te conhecer, '+ nome + '!') // concatenação
   </script>
 </body>
 </html>
