@@ -19,9 +19,15 @@
 </head>
 
 <body>
-    <div id="area"> 
+    <!--  
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
         interaja...
     </div>
+    // Metodo 1 de conseguir acionar eventos, MAS polui o HTML-->
+     <div id="area">  
+        interaja...
+    </div>
+    
 <!-- 
 mouseenter : mouse entrou na div: dispara essa função
 mousemove: enquanto eu mover o mouse dentro da div: dispara essa função
@@ -36,7 +42,29 @@ mouseout: mouse saiu da div: dispara essa função
         bloco = conteudo da função
     }
  -->
+<script>
+    var a =  window.document.getElementById('area')
+    // metodo 2 de conseguir acionar eventos, não polui tanto o html
+    a.addEventListener('click', clicar)
+    a.addEventListener('mouseenter', entrar)
+    a.addEventListener('mouseout', sair)
+    
+    function clicar(){
+        a.style.background = 'red'
+        a.innerText = 'clicou!'
+    }
+    function entrar(){
+        a.innerText = 'entrou!'
+        a.style.background = 'yellow'
+        a.style.color = 'black'
+    }
+    function sair(){
+        a.style.background = 'green'
+        a.style.color = 'white'
+        a.innerText = 'saiu!'
+    }
 
+</script>
 
 </body>
 
