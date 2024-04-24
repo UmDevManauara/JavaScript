@@ -9,6 +9,9 @@
             background-color: rgb(233, 233, 233);
             font: normal 10pt arial;
         }
+        strong{
+            color: red
+        }
     </style>
     <!-- DOM: Document Object Model 
     Conjunto de objetos dentro do navegador que vai dar acesso aos componentes internos do seu site -->
@@ -30,8 +33,39 @@
 <body>
     <h1>Iniciando estudos DOM</h1>
     <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <strong>DOM</strong></p>
-    <div>clique em mim</div>
+    <p class="aprender">Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">clique em mim</div>
+<script>
+
+    window.document.write('<p>Olá, Mundo!</p>')    
+    window.document.write(window.document.charset)
+    window.document.write('<p></p>')
+    window.document.write(window.navigator.appName)
+    window.document.write('<p></p>')
+    window.document.write(window.document.URL)
+    window.document.write('<p></p>')
+    // getElementsByTagName() // seleciona por marca exemplo: <p>, <div> etc
+        var p1 = window.document.getElementsByTagName('p')[0] //0 é o primeiro paragrafo, o segundo é 1 e sucessivamente.
+        window.document.write('<p>Esta escrito assim: '+ p1.innerText + '</p>')
+        var p2 = window.document.getElementsByTagName('p')[1] 
+        window.document.write('<p>Esta escrito assim: '+ p2.innerHTML + '</p>') // innerHTML retorna o codigo completo do elemento, incluindo o <strong>
+        p2.style.color = 'blue' // usando o .style posso mudar por script o estilo do elemento
+        var corpo = window.document.body
+        corpo.style.color = 'white'
+        corpo.style.background = 'black'
+        //var d = window.document.getElementById('msg') // getElementById procura um objeto pelo seu ID
+        //d.style.background = 'green'
+        // d.innerText = 'Estou aguardando...' //Posso mudar o Texto de um objeto
+        //window.document.getElementById('msg').innerText = ' Olá' // mesmo comando de cima mas tudo jundo, sem declarar variavel.
+        window.document.getElementById('msg').innerText = 'Olá'  
+        window.document.getElementById('msg').style.background = 'green'
+        window.document.querySelector ('div#msg').style.color = 'blue' //forma nova por seletor, seletorAll() é a forma nova no plural
+        window.document.querySelector('p.aprender').style.color = 'yellow'
+        
+
+
+    
+</script>
     
 </body>
 </html>
