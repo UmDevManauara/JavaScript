@@ -7,13 +7,13 @@ function carregar() {
     
     msg.innerHTML = `Agora são ${hora} horas`
     if (hora >= 0 && hora < 12) {
-        img.src = 'manha.png'
+        img.src = 'imagens/manha.png'
         document.body.style.background = '#ebbf8b'
     } else if (hora >= 12 && hora < 18) {
-        img.src = 'tarde.jpg'
+        img.src = 'imagens/tarde.jpg'
         document.body.style.background = '#b47037'
     } else {
-        img.src = 'noite.jpg'
+        img.src = 'imagens/noite.jpg'
         document.body.style.background = '#243350'
     
     }

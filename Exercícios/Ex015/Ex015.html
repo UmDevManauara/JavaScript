@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 14</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1> Verificar idade</h1>
+
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="txtano">Ano de Nascimento:</label>
+                <input type="number" name="nasc" id="txtano">
+                
+            </p>
+            <p> Sexo:
+                <input type="radio" name="sexo" id="masculino" value="M" checked>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="feminino" value="F">
+                <label for="feminino">Feminino</label>
+               
+            </p>
+            <input type="button" value="verificar" onclick="verificar()">
+        </div>
+
+        <div id="resultado">
+            <p>Preencha os dados</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Site criado pro Matheus Alves <a href="https://github.com/UmDevManauara" target="_blank">UmDevManauara</a>
+        </p>
+    </footer>
+    <script src="Ex015.js"></script>
+</body>
+
+</html>

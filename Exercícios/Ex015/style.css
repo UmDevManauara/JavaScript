@@ -1,0 +1,38 @@
+html, body{
+    background-color: rgb(206, 204, 204);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    text-align: center;
+}
+h1{
+    margin: 0px;
+    padding: 20px;
+    color: rgb(39, 38, 38);font-weight: 600;
+}
+footer{
+    color: rgb(83, 83, 83)55);
+}
+footer > p > a{
+    color: rgb(250, 104, 104)
+    
+}
+section{
+    text-align: left;
+    border-radius: 10px;
+    margin: auto;
+    background-color: white;
+    box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.678);
+    padding: 15px;
+    width: 50%;
+ 
+}
+img{
+    margin: auto;
+    display: block;
+    padding: 20px;
+    size: 20%;
+}
+
+
