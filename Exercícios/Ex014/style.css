@@ -1,0 +1,32 @@
+html, body{
+    background-color: rgb(236, 232, 232);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+}
+h1{
+    margin: 0px;
+    padding: 20px;
+    color: white;font-weight: 600;
+}
+footer{
+    color: white;
+}
+footer > p > a{
+    color: rgb(250, 104, 104)
+    
+}
+section{
+    border-radius: 10px;
+    margin: auto;
+    background-color: white;
+    box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.678);
+    padding: 15px;
+    width: 60vw;
+    height: 35vh;
+}
+div{
+    padding: 8px;
+}
