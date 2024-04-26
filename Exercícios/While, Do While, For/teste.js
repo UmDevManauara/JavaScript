@@ -3,9 +3,9 @@
     console.log( `Passo ${contador}`)
     contador ++
  }
-
+ contador2 = 1
 do{
-contador2 = 1
+
 console.log(`Contador ${contador2}`)
 contador2++
 
