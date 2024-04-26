@@ -24,7 +24,7 @@ function verificar() {
             } else if (idade >= 18 && idade < 50) {
                 //Adulto
                 img.setAttribute('src', 'imagens/m-adulto.png')
-            } else if (idade >= 50 && idade < 60) {
+            } else if (idade >= 50 && idade < 70) {
                 // senhor
                 img.setAttribute('src', 'imagens/m-senhor.png')
             } else {
@@ -42,7 +42,7 @@ function verificar() {
             } else if (idade >= 18 && idade < 50) {
                 //Adulto
                 img.setAttribute('src', 'imagens/f-adulta.png')
-            } else if (idade >= 50 && idade < 60) {
+            } else if (idade >= 50 && idade < 70) {
                 // senhor
                 img.setAttribute('src', 'imagens/f-senhora.png')
             } else {
@@ -52,7 +52,7 @@ function verificar() {
             
         }
         res.style.textAlign = 'center'
-        res.innerHTML = `Detecmanos ${genero} com idade de ${idade}`
+        res.innerHTML = `Detectamos ${genero} com idade de ${idade}`
         res.appendChild(img)
     }
 
