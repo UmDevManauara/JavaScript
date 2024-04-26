@@ -7,15 +7,25 @@ function contar() {
     if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
         window.alert('[EERO] Verifique novamente os dados e tente novamente!')
     } else {
-       res.innerHTML = 'Contando:'
-       for (let c = Number(inicio.value); c <= Number(fim.value); c += Number(passo.value)){
-            res.innerHTML += `${c} `
-       }
-      
-
+        let i = Number(inicio.value)
+        let f = Number(fim.value)
+        let p = Number(passo.value)
+        if (p <= 0) {
+            window.alert('Passo invalido! Considerando passo igual a 1')
+            p = 1
+        }
+        res.innerHTML = 'Contando:'
+        if (i < f) {
+            for (let c = i; c <= f; c += p) {
+                res.innerHTML += `${c} \u{1F449} `
+            } res.innerHTML += '\u{1F6A9}'
+        } else if (i > f) {
+            for (let c = i; c >= f; c -= p) {
+                res.innerHTML += `${c} \u{1F449} `
+            } res.innerHTML += '\u{1F6A9}'
+        }
     }
 }
-
 
 
 //     }
