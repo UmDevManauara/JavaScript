@@ -1,0 +1,41 @@
+html, body{
+    background-color: rgb(141, 40, 40);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    text-align: center;
+}
+h1{
+    margin: 0px;
+    padding: 20px;
+    color: rgb(255, 255, 255);font-weight: 600;
+}
+label{
+    display: inline-block;
+    width: 50px;   
+}
+input{
+    
+}
+footer{
+    color: white;
+}
+footer > p > a{
+    color: rgb(255, 210, 8)
+    
+}
+section{
+    text-align: left;
+    border-radius: 10px;
+    margin: auto;
+    background-color: white;
+    box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.678);
+    padding: 15px;
+    width: 50%;
+ 
+}
+
+
+
+
