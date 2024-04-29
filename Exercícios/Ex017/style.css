@@ -13,7 +13,7 @@ h1{
 }
 label{
     display: inline-block;
-    width: 50px;   
+    width: 70px;   
 }
 input#contar{
     padding: 5px;
@@ -36,6 +36,7 @@ section{
  
 }
 div#resultado{
+    background-color: rgb(255, 255, 255);
     padding: 10px;
 }
 

@@ -1,31 +1,18 @@
-function contar() {
-    let inicio = window.document.getElementById('iinicio')
-    let fim = window.document.querySelector('input#ifim')
-    let passo = window.document.getElementById('ipasso')
+function tabuada() {
+    let n1 = window.document.getElementById('numero')
     let res = window.document.querySelector('div#resultado')
 
-    if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
-        window.alert('[EERO] Verifique novamente os dados e tente novamente!')
+    if (n1.value.length == 0) {
+        window.alert('[ERRO] Insira um número')
     } else {
-        let i = Number(inicio.value)
-        let f = Number(fim.value)
-        let p = Number(passo.value)
-        if (p <= 0) {
-            window.alert('Passo invalido! Considerando passo igual a 1')
-            p = 1
-        }
-        res.innerHTML = 'Contando:'
-        if (i < f) {
-            for (let c = i; c <= f; c += p) {
-                res.innerHTML += `${c} \u{1F449} `
-            } res.innerHTML += '\u{1F6A9}'
-        } else if (i > f) {
-            for (let c = i; c >= f; c -= p) {
-                res.innerHTML += `${c} \u{1F449} `
-            } res.innerHTML += '\u{1F6A9}'
-        }
+        res.innerHTML = ``
+        let numeroTabuada = Number(n1.value)
+        for (i = 0; i <= 10; i++) { 
+            res.innerHTML += (`${numeroTabuada} x ${i} = ` + (numeroTabuada * i) + ` <br>`) }
     }
+
 }
+
 
 
 //     }
