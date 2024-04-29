@@ -13,4 +13,4 @@ console.log(`array com elemento adicionado ao final: ${num}`)
 console.log(` A contagem de elementos atraves do atributo length, é igual a: `+ num.length)
 //metodo sort, ordena os valores em ordem
 num.sort()
-console.log(`o vetor ordenado pelo metodo Sort() é: ${num}`)
+console.log(`o vetor ordenado pelo metodo Sort() é: ${num}`) 
