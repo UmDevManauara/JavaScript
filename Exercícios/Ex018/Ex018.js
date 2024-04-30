@@ -1,15 +1,24 @@
-let numeros = [window.document.getElementById('numero')]
+let numeros = window.document.getElementById('numero')
 let lista = window.document.querySelector('select#flista')
 let res = window.document.getElementById('resultado')
-function adicionar() {
-    var vetor = []
+var vetor = []
+
+function inNumero(n){
+  if(Number(n) >= 1 && Number(n) <= 100) 
+}
+function inLista(){
+
     
-    if (numeros.value.length == 0) {
+}
+
+function adicionar() {    
+    if (!testeNumero(numeros.value) && inLista(numeros.value, vetor)) {
         window.alert('[ERRO] Insira um número')
     } else {
+        vetor += Number(numeros.value)
         var item = document.createElement('option')
-        item.text = `${Number(numeros.value)}`
-        res.appendChild(item)
+        item.text += `${vetor.value}`
+        lista.appendChild(item)
     }
 }
 
