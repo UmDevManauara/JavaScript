@@ -1,35 +1,48 @@
-let numeros = window.document.getElementById('numero')
+let numero = window.document.getElementById('numero')
 let lista = window.document.querySelector('select#flista')
 let res = window.document.getElementById('resultado')
 var vetor = []
 
 function inNumero(n){
-  if(Number(n) >= 1 && Number(n) <= 100) 
+  if(Number(n) >= 1 && Number(n) <= 100){
+    return true
+  }else{
+    return false
+  }
 }
-function inLista(){
 
-    
+function inLista(n, l){
+  if (l.indexOf(Number(n)) != -1){ //  se o numero existir dentro do vetor
+    return true
+  } else{
+    return false
+  }
 }
-
+  
+  
 function adicionar() {    
-    if (!testeNumero(numeros.value) && inLista(numeros.value, vetor)) {
-        window.alert('[ERRO] Insira um número')
+    if (!inNumero(numero.value) || inLista(numero.value, vetor)) {
+        window.alert('[ERRO] Valor invalido ou ja esta na lista')
     } else {
-        vetor += Number(numeros.value)
+        vetor.push(Number(numero.value))
+        window.alert('Tudo OK')
         var item = document.createElement('option')
-        item.text += `${vetor.value}`
+        item.text = `Valor ${numero.value} adicionado`
         lista.appendChild(item)
     }
-}
+    numero.value = ''
+    numero.focus() // volta a focar  no na  caixa de input
+  }
+    
 
-
-function finalizar(){
-    let res = window.document.getElementById('resultado')
-    if (res.value.length == 0) {
+ function finalizar(){
+     if (vetor.length == 0) {
         window.alert('[ERRO] Insira um número')
-    }
+     }else{
+      
+     }
 
-}
+ }
 
 
 
